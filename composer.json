@@ -1,0 +1,38 @@
+{
+    "name": "tsvetkov/tinkoff_open_api",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alexander Tsvetkov",
+            "email": "tsvetkov_aleksandr@mail.ru"
+        }
+    ],
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*",
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^6.3 || ^7.0"
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse src",
+        "psalm-init": "psalm --init",
+        "psalm": "psalm",
+        "phpcs": "php-cs-fixer fix src"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "tsvetkov\\tinkoff_open_api\\": "src" }
+    },
+    "description": "PHP Library for telegram bot API",
+    "require-dev": {
+        "phpstan/phpstan": "^0.12",
+        "vimeo/psalm": "^4.4",
+        "friendsofphp/php-cs-fixer": "^2.18",
+        "phpunit/phpunit": "^9.5"
+    }
+}

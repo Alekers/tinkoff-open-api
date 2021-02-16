@@ -1,0 +1,6 @@
+/.idea
+/vendor/
+composer.lock
+/.php_cs.cache
+/tests/fixtures-local.json
+/.phpunit.result.cache
